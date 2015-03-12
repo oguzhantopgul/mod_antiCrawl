@@ -61,7 +61,7 @@ AddOutputFilterByType  parameter  adds  the  *INJECT*  filter  which  is  used  
 ```
 Inject "s|</a>|</a><a href=dontclick.html style=display:none;>link</a>|ni" 
 ```
-Expression defines that </a> tag is replaced with     
+Expression defines that \</a\> tag is replaced with     
 ```
 </a><a href=dontclick.html style=display:none;>link</a> 
 ```
