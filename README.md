@@ -2,23 +2,20 @@
 mod_antiCrawl: An anti-crawling module for Apache web servers
 An Apache Module That Protects Web Sites From Crawlers
 
-== Introduction ==
+## Introduction
 
 Crawlers  are  beneficial  and  effective  tools  when  they  are  aimed  to  increase  search performance  and  accuracy.  On  the  other  hand,  abuse  of  these  crawling  techniques  is  an issue  that  has  to  be  protected  personally  and  corporately.  mod_antiCrawl  is  an  Apache 
 server module which aims to serve crawler protections. 
 
 
-== Details ==
+## Details
 
 mod_antiCrawl has two main anti-crawler functionalities;
   * Detect crawlers by their request densities.
   * Detect crawlers by on the fly hidden trap link injection.
 
-== Download ==
-http://code.google.com/p/mod-anticrawl/downloads/list
-----
 
-== mod_antiCrawl Installation==
+## mod_antiCrawl Installation
 The installation of mod_antiCrawl module is done as follows mod_antiCrawl source code is compiled with *apxs* tool. *apxs* is the tool that is used for building and installing Apache extensions.  
 {{{
 apxs -c mod_anticrawl.c 
@@ -37,7 +34,7 @@ command  installs  module  and  adds  *mod_anticrawl.so*  shared  object  into  
  
 ----
 
-== mod_antiCrawl Configuration ==
+## mod_antiCrawl Configuration
  
 In order to use mod_antiCrawl, *mod_anticrawl.so* has to be loaded in configuration file. Loading is done by *LoadModule* directive in configuration file as shown below. 
 {{{
@@ -70,7 +67,6 @@ Expression defines that {{{</a>}}} tag is replaced with
 }}} 
 and these values can be altered in order to inject hidden link into another place.  
  
-----
 
 *These configurations can be combined into the expression that can be stated as follows,*
 {{{ 
